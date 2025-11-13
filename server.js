@@ -26,9 +26,9 @@ app.use(cookieParser())
 
 app.use(cors({
   origin: ["http://localhost:5173",
-            "whatsapp-three-topaz.vercel.app",
-            "whatsapp-git-main-kennys-projects-2ff6d28e.vercel.app",
-            "whatsapp-1t2ryp2tz-kennys-projects-2ff6d28e.vercel.app"],  // your frontend URL
+            "https://whatsapp-three-topaz.vercel.app",
+            "https://whatsapp-git-main-kennys-projects-2ff6d28e.vercel.app",
+            "https://whatsapp-1t2ryp2tz-kennys-projects-2ff6d28e.vercel.app"],  // your frontend URL
   credentials: true                 // if you ever use cookies/auth headers
 }))
 
@@ -37,9 +37,9 @@ const server = createServer(app)
 const io = new Server(server, {
   cors: {
     origin: ["http://localhost:5173",
-            "whatsapp-three-topaz.vercel.app",
-            "whatsapp-git-main-kennys-projects-2ff6d28e.vercel.app",
-            "whatsapp-1t2ryp2tz-kennys-projects-2ff6d28e.vercel.app"], // match your Vite app URL
+            "https://whatsapp-three-topaz.vercel.app",
+            "https://whatsapp-git-main-kennys-projects-2ff6d28e.vercel.app",
+            "https://whatsapp-1t2ryp2tz-kennys-projects-2ff6d28e.vercel.app"], // match your Vite app URL
     methods: ["GET", "POST"],
     credentials: true,
   },
