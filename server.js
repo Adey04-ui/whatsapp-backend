@@ -39,7 +39,7 @@ const io = new Server(server, {
     origin: ["http://localhost:5173",
             "whatsapp-three-topaz.vercel.app",
             "whatsapp-git-main-kennys-projects-2ff6d28e.vercel.app",
-            "whatsapp-1t2ryp2tz-kennys-projects-2ff6d28e.vercel.app"] // match your Vite app URL
+            "whatsapp-1t2ryp2tz-kennys-projects-2ff6d28e.vercel.app"], // match your Vite app URL
     methods: ["GET", "POST"],
     credentials: true,
   },
