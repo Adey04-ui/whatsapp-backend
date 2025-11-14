@@ -121,7 +121,7 @@ const getMe = asyncHandler(async (req, res) => {
 
 // ==================== GET ALL ====================
 const getAll = asyncHandler(async (req, res) => {
-  const users = await User.find({})
+  const users = await User.find({}).select("-password")
   if (!users.length) {
     res.status(404)
     throw new Error('No users found')
